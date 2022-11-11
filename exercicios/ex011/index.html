@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em diferentes dispositivos, ou, simplismente diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- A logica é: se o tamanho da tela for de menor que 750px usa a foto p -->
+        <source media="(max-width: 1150px)" srcset="imagens/foto-m.png" type="image/png">
+        <!-- Se não, usa a foto m -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <!-- Casos contrarios usa a foto padrão -->
+    </picture>
+    <h1>Reproduzindo Àudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio controls>
+        <!-- Tenta tocar essa -->
+        <source src="midia/NoCaprice24.mp3" type="audio/mpe">
+        <!-- se n dr vai essa -->
+        <source src="midia/NoCaprice24.ogg" type="audio/ogg">
+        <!-- se n der vai essa aqui -->
+        <source src="midia/NoCaprice24.wav" type="audio/wav">
+        <!-- caso contrario mostra isso -->
+    <p>Infelizmente seu navegador não foi capaz de carregar arquivos de audio. tente clicar para ouvir a música no youtube</p>
+    </audio>
+</body>
+</html>

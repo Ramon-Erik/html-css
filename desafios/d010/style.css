@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@import url('pacote-projeto-d010/idroid.otf');
+
+body {
+    background-color: #6084E6;
+}
+
+.titulo {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    color: #0C2261;
+    padding-top: 10px;
+}
+
+header {
+    background-image: linear-gradient(180deg, #2a5eec, #293861);
+    color: white;
+    text-align: center;
+    border: 0;
+    margin: -21px -9px -19px -9px;
+}
+
+nav {
+    text-align: left;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+main {
+    background-color: white;
+    max-width: 55%;
+    min-width: auto;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h2 {
+    /* width: 90%; */
+    background-image: linear-gradient(90deg, #6084E6, white);
+}
+
+footer {
+    background-color: #293861;
+    color: white;
+    margin: -8px;
+    padding: 2px;
+    text-align: center;
+}

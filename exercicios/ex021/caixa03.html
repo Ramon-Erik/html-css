@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1 {
+            /* o estilo 'border' tem que exixtir sempre
+            caso a img não seja suportada, a black border
+            aparece. mas da pra colocar a border: {tamanho} {tipo (solid etc)} transparent;*/
+            border: 16px solid black;
+            padding: 5px;
+
+            border-image-source: url('borda.png');
+            border-image-slice: 26;
+            /* repeat ou stretch / repetir ou esticar */
+            border-image-repeat: repeat;
+
+            /* short hand da border img */
+            /* border-image-source: url('border.png') 20 repeat; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Borda</h1>
+
+</body>
+</html>

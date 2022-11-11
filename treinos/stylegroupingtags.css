@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/* #320440
+#AC4BCA
+#960DBF
+#361840
+#6E0A8C */
+
+body {
+    background-image: linear-gradient(to right, #9938b6, #820CA6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin: 0;
+}
+
+header {
+    width: 650px;
+    margin: auto;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#titulo {
+    color: #50255e;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    width: 650px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 5px #36184065;
+}
+
+h2 {
+    color: #740c94;
+    margin-top: 25px;
+    margin-bottom: -5px;
+}
+
+#foto-chopin {
+    background-image: url("chopin.png");
+    background-size: cover;
+    width: 100%;
+    height: 25em;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+a {
+    color: beige;
+    text-decoration: none;
+    font-size: 1.11em;
+}
+
+a:hover {
+    background-color: #6e0a8c86;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 10px 10px #6e0a8c86;
+}
+
+footer {
+    background-color: #6E0A8C;
+    color:beige;
+    text-align: center;
+}
+
+footer > p {
+    margin: 0;
+    padding: 5px;
+}
+
+.rodape {
+    display: flex;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.rodape > a {
+    color: beige;
+}
+
+.rodape > a:hover{
+    background-color: #950dbf6e;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 10px 10px #950dbf6e;
+}
