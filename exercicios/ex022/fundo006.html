@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo</title>
     <style>
         body{
+            
             height: 100vh;
             background-color: black;
             /* se o bg-mage não carregar o color vai */
-            background-image: url(imagens/wallpaper003.jpg);
+            background-image: url(imagens/wallpaper002.jpg);
 
             background-position: center center;
             /* primeiro coluna depois linha */
@@ -27,11 +28,19 @@
             background-repeat: repeat-y;
             /* repetir so  no eixo y */
 
+            background-attachment: scroll; /* padrão, rolou o conteudo rolou o fundo*/
+            background-attachment: fixed; /* fixo, fica parado -> fica legal co m cover*/
+
+            /* short hand: background
+            color > image > position > repeat > [size -> na pratica não funciona, adicionar á parte] > attachment */
+            
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 450px;
+            max-width: 450px;
             padding: 10px;
             margin: auto;
             border: 1px solid black; 

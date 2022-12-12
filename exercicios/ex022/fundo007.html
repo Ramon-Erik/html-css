@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento na vertical</title>
+    <style>
+        #container {
+            position: relative;
+            /* relative é padrão */
+            height: 95vh;
+            background-color: purple;
+            padding: 10px;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+        }
+        #conteudo {
+            position: absolute;
+            /* todo conteudo dentro do conteiner tem que ser absoluto */
+            
+            left: 50%;
+            top: 50%;
+            height: 200px;
+            background-color: yellow;
+            width: 300px;
+            
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            transform: translate(-50%, -50%);
+            /* margin: auto;  */
+            /* alinhamento horizontal */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+            <p>tem que ter o container e o conteudo. o conteiner tem posição relattiva, o conteudo absoluto
+                as posiçoes left e top dever ser 50%, o que vai locar o inicio do conteudo a 50% do container
+                para colocar o conteudo no centro do conteiner usa-se a propriedade transform -> translate -50% -50%
+                pois isso vai transitar o conteudo paa o lado e para cima deixando-o centralizado
+                horizontalmente e verticalmente
+            </p>
+        </article>
+    </section>
+</body>
+</html>
