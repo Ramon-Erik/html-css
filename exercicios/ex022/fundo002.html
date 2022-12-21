@@ -6,17 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalizando fundos</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
         body {
-            background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
-            background-size: 100px 100px;
-            /* background-repeat: repeat; */
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(43, 0, 88);
+            color: white;
             background-repeat: no-repeat;
             /* background-repeat: repeat-x;
             background-repeat: repeat-y;
             background-repeat: round; */
         }
-    </style>
+        .tela {
+            background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
+            width: 100%;
+            height: 100vh;
+            background-size: 100px 100px;
+        }
+        #tela1 {
+            /* Padrão dos navegadores. repete as imagens qauando elas forem pequenas */
+            background-repeat: repeat;
+        }
+        #tela2 {
+            /* Deixa a imagem colo ela é*/
+            background-repeat: no-repeat;
+        }
+        #tela3 {
+            /* Repete a imagem no eixo x, no horizonte, ponto de partida: esquerda cima (da para mudar)*/
+            background-repeat: repeat-x;
+        }
+        #tela4 {
+            /* Repete a imagem no eixo y, na vertical, ponto de partida: esquerda cima (da para mudar)*/
+            background-repeat: repeat-y;
+        }
+        </style>
 </head>
 <body>
+    <h1>teste de aplicação de fundo</h1>
+    <div class="tela" id="tela1"></div>
+    <h1>tela 2 no-repeat</h1>
+    <div class="tela" id="tela2"></div>
+    <h1>tela 3 repeat-x</h1>
+    <div class="tela" id="tela3"></div>
+    <h1>tela 4 repeat-y</h1>
+    <div class="tela" id="tela4"></div>
 </body>
 </html>
