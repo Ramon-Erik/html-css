@@ -14,7 +14,8 @@
             height: 100vh;
             background-color: black;
             /* se o bg-image não carregar o color vai */
-            background-image: url(imagens/pattern001.png);
+            background-image: url(imagens/pattern004.png);
+
 
             /* background-size: 100%; -> deixa imagem repetida */
             /* background-size: 100% 100%; -> distorce a imagem e precisa do 100vh*/
@@ -28,20 +29,16 @@
             /* background-attachment: scroll; padrão, rolou o conteudo rolou o fundo */
             /* background-attachment: fixed; fixo, fica parado -> fica legal co m cover */
 
-            /* short hand: background
-            color > image > position > repeat > [size -> na pratica não funciona, adicionar á parte] > attachment */
-            
-            /* background: black url(imagens/pattern001.png) center center repeat fixed; */
             /* background-size: cover; */
             background-repeat: repeat;
         }
         div {
-            width: 99%;
+            width: 100%;
             margin-bottom: 10px;
-            border: 5px solid white; 
+            /* border: 5px solid green;  */
         }
         div section {
-            max-width: 450px;
+            max-width: 550px;
             background-color: white;
             margin: auto;
         }
@@ -49,26 +46,54 @@
             /* padrão dos navegadores deixa o navegador se virar com o tamanho*/
             background-size: auto;
             background-color: white;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
+            /* padrao dos navegadores, o que fica em destaque é a height do background
+               já que se o bg acaba ele pode ficar repetindo */
+            background-attachment: scroll;
             background-image: url(imagens/wallpaper002.jpg);
-        }
-        #div2 {
+            
+            /* shorthand para o atributo background
+            ordem de vallores:
+        color > image > position > repeat > [size -> na pratica não funciona, adicionar á parte] > attachment */
+                        (left,     (repeat,    (auto,                                              (scroll,
+                        center,     no-repeat   cover                                               fixed)
+                        right)      repeat-x    contain
+                                    repeat-y)   valores numercos em %)
+            /* background: black url(imagens/pattern001.png) center center repeat fixed; */
+            
+            }
+            #div2 {
             /* faz com que a imagen seja 100% exibida, criando bordas pretas nos lados que nem um filme na tv*/
             background-size: contain;
             background-color: black;
             background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
             background-image: url(imagens/wallpaper002.jpg);
         }
         #div3 {
             /*Ocupa toda a tela, mesmo que precise cortar a imagem*/
             background-size: cover;
             background-color: black;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
+            /* fica fixo, e não importa quanto voce role para baixo ele não sai do canto */
+            background-attachment: fixed;
+            background-image: url(imagens/wallpaper002.jpg);
+        }
+        #div4 {
+            /*Ocupa toda a tela, mesmo que precise cortar a imagem*/
+            background-size: cover;
+            background-color: black;
+            background-repeat: repeat;
+            /* fica fixo, e não importa quanto voce role para baixo ele não sai do canto */
+            background-attachment: fixed;
             background-image: url(imagens/wallpaper002.jpg);
         }
         </style>
 </head>
 <body>
+    <h1>repeat com fixed não funciona</h1>
+    <h1> div 1 repeat, scroll, auto</h1>
     <div id="div1">
         <section>
             <h1>Teste de imagens de fundo.</h1>
@@ -93,7 +118,8 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
         </section>
     </div>
-    <br><br>
+    <br><br><br><br>
+    <h1>div 2 no-repeat, contain, fixed </h1>
     <div id="div2">
         <section>
             <h1>Teste de imagens de fundo.</h1>
@@ -118,8 +144,35 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
         </section>
     </div>
-    <br><br>
+    <br><br><br><br>
+    <h1>div 3 no-repeat, fixed, cover</h1>
     <div id="div3">
+        <section>
+            <h1>Teste de imagens de fundo.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <!-- teste para ver repetição de coteudo -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+        </section>
+    </div>
+        <br><br><br><br>
+    <h1>div 4</h1>
+    <div id="div4">
         <section>
             <h1>Teste de imagens de fundo.</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
