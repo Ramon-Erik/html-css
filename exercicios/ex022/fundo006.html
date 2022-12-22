@@ -6,70 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundo</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
         body{
-            
             height: 100vh;
             background-color: black;
-            /* se o bg-mage não carregar o color vai */
-            background-image: url(imagens/wallpaper002.jpg);
+            /* se o bg-image não carregar o color vai */
+            background-image: url(imagens/pattern001.png);
 
-            background-position: center center;
-            /* primeiro coluna depois linha */
-            background-repeat: no-repeat;
-            background-size: cover;
-            
-            /* height: 100vh; */
             /* background-size: 100%; -> deixa imagem repetida */
             /* background-size: 100% 100%; -> distorce a imagem e precisa do 100vh*/
 
             /* background-size: cover; -> não mostra a imagem toda, mas ocupa 100% da viewport*/
             /* background-size: contain; -> não corra imagem, deixa 100% exbida, cria barra*/
             
-            background-repeat: repeat-y;
             /* repetir so  no eixo y */
+            /* background-repeat: repeat-y; */
 
-            background-attachment: scroll; /* padrão, rolou o conteudo rolou o fundo*/
-            background-attachment: fixed; /* fixo, fica parado -> fica legal co m cover*/
+            /* background-attachment: scroll; padrão, rolou o conteudo rolou o fundo */
+            /* background-attachment: fixed; fixo, fica parado -> fica legal co m cover */
 
             /* short hand: background
             color > image > position > repeat > [size -> na pratica não funciona, adicionar á parte] > attachment */
             
-            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
-            background-size: cover;
+            /* background: black url(imagens/pattern001.png) center center repeat fixed; */
+            /* background-size: cover; */
+            background-repeat: repeat;
         }
-
-        main {
-            background-color: white;
+        div {
+            width: 99%;
+            margin-bottom: 10px;
+            border: 5px solid white; 
+        }
+        div section {
             max-width: 450px;
-            padding: 10px;
+            background-color: white;
             margin: auto;
-            border: 1px solid black; 
-            border-radius: 15px;
         }
-    </style>
+        #div1 {
+            /* padrão dos navegadores deixa o navegador se virar com o tamanho*/
+            background-size: auto;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-image: url(imagens/wallpaper002.jpg);
+        }
+        #div2 {
+            /* faz com que a imagen seja 100% exibida, criando bordas pretas nos lados que nem um filme na tv*/
+            background-size: contain;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-image: url(imagens/wallpaper002.jpg);
+        }
+        #div3 {
+            /*Ocupa toda a tela, mesmo que precise cortar a imagem*/
+            background-size: cover;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-image: url(imagens/wallpaper002.jpg);
+        }
+        </style>
 </head>
 <body>
-    <main>
-        <h1>Teste de imagens de fundo.</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <!-- teste para ver repetição de coteudo -->
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
-    </main>
+    <div id="div1">
+        <section>
+            <h1>Teste de imagens de fundo.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <!-- teste para ver repetição de coteudo -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+        </section>
+    </div>
+    <br><br>
+    <div id="div2">
+        <section>
+            <h1>Teste de imagens de fundo.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <!-- teste para ver repetição de coteudo -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+        </section>
+    </div>
+    <br><br>
+    <div id="div3">
+        <section>
+            <h1>Teste de imagens de fundo.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <!-- teste para ver repetição de coteudo -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vitae facere, iure soluta consequuntur aliquam ea rem eveniet delectus iusto! Eligendi soluta voluptatem quasi laborum dolore ex odit asperiores quos debitis sit. Quas magnam iste, amet unde accusantium earum. Temporibus, laboriosam harum? Ducimus, tenetur rerum? Nihil eum perferendis accusamus harum.</p>
+        </section>
+    </div>
 </body>
 </html>
