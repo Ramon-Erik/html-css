@@ -34,7 +34,7 @@ header h1 {
 }
 
 header p {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 main {
@@ -88,7 +88,7 @@ footer {
     font-family: 'Anton', sans-serif;
     background-color: var(--preto);
     font-size: 1rem;
-    padding: 5px;
+    padding-top: 5px;
 }
 
 footer, header > p {
