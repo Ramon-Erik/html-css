@@ -31,6 +31,7 @@ header {
     text-align: center;
     font-family: var(--titulo);
     background-color: var(--preto);
+    font-family: var(--texto);
 }
 
 header h1 {
@@ -60,10 +61,12 @@ a:hover {
 }
 
 #destaque1 {
+    background-color: rgb(249, 255, 198);
     background-image: url(imagens/background001.jpg);
 }
 
 #destaque2 {
+    background-color: rgb(249, 255, 198);
     background-image: url(imagens/background002.jpg);
 }
 
@@ -91,7 +94,7 @@ pre {
 footer {
     font-family: var(--texto);
     background-color: var(--preto);
-    font-size: 2vw;
+    font-size: 3vh;
     padding-top: 10px;
 }
 
