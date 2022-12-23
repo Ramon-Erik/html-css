@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: Quartzo;
+    src: url('fontes/QuartzoBold-W9lv.ttf');
+    font-weight: bold;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
     --preto: rgb(20, 0, 0); 
+    --titulo:  Quartzo, sans-serif;
+    --versos: 'Bebas Neue', cursive;
+    --texto: 'Inter', sans-serif;
 }
 
 * {
@@ -16,21 +25,16 @@ body {
 
 header {
     height: fit-content;
-    padding: 30px;
-    margin-bottom: 10px;
-    font-family: 'Anton', sans-serif;
-    background-color: var(--preto);
+    margin-bottom: 15px;
+    padding: 35px;
     color: white;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-family: var(--titulo);
+    background-color: var(--preto);
 }
 
 header h1 {
-    font-weight: bolder;
     font-size: 5.5vw;
-    letter-spacing: 0.1rem;
 }
 
 header p {
@@ -39,8 +43,7 @@ header p {
 
 main {
     margin: 10px 0px;
-    /* font-size: 2.3rem; */
-    line-height: 6vw;
+    line-height: 8vw;
 }
 
 article p {
@@ -80,19 +83,19 @@ a:hover {
 }
 
 pre {
-    font-family: 'Bebas Neue', cursive;
+    font-family: var(--versos);
+    font-style: italic;
     margin: 15px 25px;
 }
 
 footer {
-    font-family: 'Anton', sans-serif;
+    font-family: var(--texto);
     background-color: var(--preto);
     font-size: 1rem;
     padding-top: 5px;
 }
 
 footer, header > p {
-    font-family: 'Inter', sans-serif;
     text-align: center;
     color: white;
 }
