@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Anton', sans-serif;
+}
+
+pre {
+    font-family: 'Bebas Neue', cursive;
+}
+
+footer {
+    font-family: 'Anton', sans-serif;
+}
+
+footer, header > p {
+    font-family: 'Inter', sans-serif;
+}
