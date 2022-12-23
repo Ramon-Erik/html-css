@@ -18,14 +18,17 @@ header {
     height: 40vh;
     margin-bottom: 10px;
     font-family: 'Anton', sans-serif;
-    font-weight: bolder;
-    font-size: 5.5vh;
     background-color: var(--preto);
     color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 4.5vw;
 }
 
 main {
