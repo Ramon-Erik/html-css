@@ -2,15 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+:root {
+    --preto: rgb(20, 0, 0); 
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 header {
+    height: 40vh;
     margin-bottom: 10px;
     font-family: 'Anton', sans-serif;
+    background-color: var(--preto);
+    color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 main {
@@ -19,6 +29,10 @@ main {
 
 article p {
     padding: 20px;
+}
+
+a {
+    color: white;
 }
 
 #destaque1 {
@@ -31,7 +45,7 @@ article p {
 
 .destaque {
     width: 100%;
-    height: 100vh;
+    max-height: 100vh;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
@@ -39,6 +53,7 @@ article p {
 .destaque > pre {
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.178);
+    color: white;
 }
 
 pre {
@@ -48,9 +63,11 @@ pre {
 
 footer {
     font-family: 'Anton', sans-serif;
+    background-color: var(--preto);
 }
 
 footer, header > p {
     font-family: 'Inter', sans-serif;
     text-align: center;
+    color: white;
 }
