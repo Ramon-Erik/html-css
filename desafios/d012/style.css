@@ -58,7 +58,7 @@ a:hover {
 .destaque {
     width: 100%;
     background-attachment: fixed;
-    background-position: right bottom;
+    background-position: center center;
     background-size: cover;
 }
 
@@ -79,6 +79,7 @@ footer {
     font-family: 'Anton', sans-serif;
     background-color: var(--preto);
     font-size: 1.2rem;
+    padding: 5px;
 }
 
 footer, header > p {
