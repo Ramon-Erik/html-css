@@ -5,6 +5,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
@@ -18,6 +19,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-size: 4vw;
 }
@@ -93,11 +95,12 @@ pre {
 footer {
     font-family: var(--texto);
     background-color: var(--preto);
-    font-size: 3vh;
+    font-size: 2.7vw;
     padding-top: 10px;
 }
 
 footer, header > p {
+    font-size: 1.3rem;
     text-align: center;
     color: white;
 }
