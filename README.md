@@ -1,5 +1,14 @@
 # html-css
 
- Estudos de HTML e CSS
+Neste repositorio eu mostro meus estudos de HTML e CSS
 
-Estou aprendendo a criar sites e a gerenciar meus repositorios
+Como fazer para ter acesso?
+
+
+use o link https://ramon-erik.github.io/html-css/
+
+
+você pode indicar a pasta depois de "html-css/" (exercicios,  ou desafios)
+
+
+em seguida a pasta com os arquivos desejados. ("exercicios/ex022/fundo007.html", ou "desafios/d012/index.html")
