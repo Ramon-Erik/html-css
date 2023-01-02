@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, caption, #destaque{
+            background-color: lightgray;
+        }
+        td, th, caption {
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pov: aquele menino no grupinho de heteros</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="colgroup" rowspan="2">Area</th>
+                <th scope="col" rowspan="2">Diciplinas</th>
+                <th scope="col" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Media</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">noata 2</th>
+            </tr>
+        </thead>
+        <caption>Boletim</caption>
+        <tr>
+            <th scope="rowgroup" scope="rowgroup" rowspan="4">Exatas</th>
+            <td>Matematica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Quimica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Fisica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th scope="row" colspan="4">Media de exatas</th>
+            <td id="destaque">0.0</td>
+        </tr>
+        <tr>
+            <th scope="rowgroup" scope="rowgroup" rowspan="2">Humanas</th>
+            <td>Portugês</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Ingles</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th scope="row" colspan="4">Media de humanas</th>
+            <td id="destaque">0.0</td>
+        </tr>
+    </table>
+</body>
+</html>
