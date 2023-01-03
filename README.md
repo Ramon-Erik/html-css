@@ -5,7 +5,7 @@ Neste repositorio eu mostro meus estudos de HTML e CSS
 Como fazer para ter acesso?
 
 
-use o link https://ramon-erik.github.io/html-css/readme.md
+use o link https://ramon-erik.github.io/html-css/
 
 
 você pode indicar (no lugar do readme) a pasta depois de "html-css/" (exercicios,  ou desafios)
