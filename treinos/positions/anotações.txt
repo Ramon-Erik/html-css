@@ -1,0 +1,19 @@
+fluxo do html: flow
+posicionamento de cima para baixo | um abaixo do outro
+
+5 tipos de posições no css:
+
+static
+segue o fluxo do html, é o default, pois deixa os itens estaticos, um abaixo o outro
+
+relative
+tambem respeita o fluxo do html, porem possui as direções que podem ser mudadas (top, right, bottom e left) mas ela sobrepõe outros elementos
+
+absolute
+pode ser movido livrimente referente a tela, no caso: onde ele for filho. normalmente se usa um pai relativo e um filho absoluto
+
+fixed
+fica fixo em relaçao a tela, e acompanha o scroll
+
+stiky
+ele segue o flow do html, mas quando a tela começa a dar scroll ele parece estar fixo
