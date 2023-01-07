@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuário</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* main {
+            width: 500px;
+            height: 350px;
+            box-shadow: 0.3px .3px 15px 5px #00000050;
+            margin: auto;
+            border-radius: 5px;
+            padding: 10px;
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Meu primeiro formulário</h1>
+        <!-- metodo padrão de envio de formulario: get -> usar para dados que não são sensiveis. como nome idade peso etc -> so pode enviar 3   mil letras (3 mil bytes)
+             
+            outro metodo de envio de formulário: post -> usar para dados mais sensiveis. como senhas, cpf, cartão de credito, pois o metodo em questão nao mostra esses dados na url-->
+        <form action="cadastro.php" autocomplete="off" method="post">
+            <p>
+                <label form="iCaixaNome">nome:</label> 
+                <input type="text" name="caixaNome" id="iCaixaNome">
+            </p>
+            <p>
+                <label for="iCaixaSobrenome">sobrenome:</label> 
+                <input type="text" name="caixaSobrenome" id="iCaixaSobrenome">
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
