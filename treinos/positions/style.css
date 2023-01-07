@@ -1,0 +1,46 @@
+div {
+    height: 60px;
+    background: lightskyblue;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.relativa {
+    background-color: lightcoral;
+    position: relative;
+}
+
+.relativa-alterada {
+    top: 40px;
+    left: 40px;
+}
+
+.absoluta {
+    height: 30px;
+    width: 60px;
+    background-color: brown;
+    position: absolute;
+    top: 20px;
+    right: 1px;
+}
+
+.fixo {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    top: 10px;
+    right: 9px;
+    background-color: blueviolet;
+}
+
+html {
+    padding-bottom: 1000px;
+}
+
+.stic {
+    height: 100px;
+    width: 300px;
+    top: 10px;
+    background-color: #881;
+    position: sticky;
+}
