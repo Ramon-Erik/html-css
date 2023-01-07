@@ -51,12 +51,15 @@ main {
     margin: 30px 0;
 }
 
-#links a:hover {
-    /* margin-right: 10px; */
-    padding: 10px;
+#links img:hover {
+    box-sizing: border-box;
+    border: 2px solid white;
+    transform: translate(-5px -5px);
+    transition: transform .3s, border .2s;
 }
 
 #links img {
     border-radius: 50%;
     height: 50px;
+    box-shadow: 2px 2px 5px 7px  #ffffff31;
 }
