@@ -24,9 +24,11 @@
         <h1>Meu primeiro formulário</h1>
         <!-- metodo padrão de envio de formulario: get -> usar para dados que não são sensiveis. como nome idade peso etc -> so pode enviar 3   mil letras (3 mil bytes)
              
-            outro metodo de envio de formulário: post -> usar para dados mais sensiveis. como senhas, cpf, cartão de credito, pois o metodo em questão nao mostra esses dados na url-->
+            outro metodo de envio de formulário: post -> usar para dados mais sensiveis. como senhas, cpf, cartão de credito, pois o metodo em questão nao mostra esses dados na url
+        -->
         <form action="cadastro.php" autocomplete="off" method="post">
             <p>
+                <!-- ! SEMPRE USAR LABELS COM O ATRIBUTO FOR, POIS INDICA A QUAL CAIXA ELA PERTENCE-->
                 <label form="iCaixaNome">nome:</label> 
                 <input type="text" name="caixaNome" id="iCaixaNome">
             </p>
