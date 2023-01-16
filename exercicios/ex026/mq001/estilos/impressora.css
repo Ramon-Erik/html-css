@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* estilos para impressoras */
+
+* {
+    padding: 10px;
+    margin: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+nav {
+    display: none;
+}
+
+article {
+    width: 100%;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+article::after {
+    content: 'Esse  arquio foi impresso através dos exercicios de ramon'
+}
