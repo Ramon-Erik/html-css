@@ -3,7 +3,8 @@
 /* portrait - em pé */
 
 body {
-    background: chocolate url(../../imagens/cev-landscape.jpg);
+    background: chocolate url(../../imagens/cev-portrait.jpg);
+    background-position: center bottom;
 }
 
 h1::before {
