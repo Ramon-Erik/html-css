@@ -13,6 +13,8 @@ html, body {
     background-color: rgb(251, 255, 21);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right center;
+
 }
 
 h1 {
