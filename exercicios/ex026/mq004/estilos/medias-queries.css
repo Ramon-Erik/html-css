@@ -1,3 +1,75 @@
 @charset "UTF-8";
 
 /* outras telas */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+    #celular {
+        display: none;
+    }
+    #impressora {
+        display: block;
+        margin: auto;
+    }
+    h1 {
+        text-shadow: none;
+        color: black;
+    }
+    main {
+        border: 1px solid black;
+    }
+    main::after {
+        content: 'site impresso pelo site de Ramon Erik';
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #celular {
+        display: none;
+    }
+    #tablet {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #celular {
+        display: none;
+    }
+    #tablet {
+        display: none;
+    }
+    #pc {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and  (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #celular {
+        display: none;
+    }
+    #pc {
+        display: none;
+    }
+    #tv {
+        display: block;
+        margin: auto;
+    }
+}
