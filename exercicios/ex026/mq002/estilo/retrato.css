@@ -1,3 +1,11 @@
 @charset "UTF-8";
 
 /* portrait - em pé */
+
+body {
+    background: chocolate url(../../imagens/cev-landscape.jpg);
+}
+
+h1::before {
+    content: '*em-pé*'
+}
