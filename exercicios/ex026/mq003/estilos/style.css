@@ -1,0 +1,49 @@
+/* geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(251, 255, 21);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+
+h1, h2 {
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+h1::before {
+    content: '*normal*'
+}
+
+/* retrato */
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(../../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+    }
+
+    h1::before {
+        content: '*em-pé*'
+    }
+}
+
+/* paisagem */
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(../../imagens/cev-landscape.jpg);
+        background-position: left center;
+    }
+
+    h1::before {
+        content: '*deitado*'
+    }
+}
