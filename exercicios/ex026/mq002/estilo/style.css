@@ -1,3 +1,27 @@
 @charset "UTF-8";
 
 /* todos os tipos */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(251, 255, 21);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+h1 {
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+h1::before {
+    content: '*normal*'
+}
