@@ -53,7 +53,7 @@ nav a:focus {
 }
 
 main {
-    max-width: 600px;
+    max-width: 768px;
     margin: auto;
     padding: 15px;
 }

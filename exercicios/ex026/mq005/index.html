@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mq</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudarTamanho()">
     <header>
         <h1>
             meu site lokao
@@ -41,6 +42,13 @@
     <script>
         function aparecerMenu() {
             if (menu.style.display == 'none' || menu.style.display == '') {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+        function mudarTamanho() {
+            if (window.innerWidth >= 768) {
                 menu.style.display = 'block'
             } else {
                 menu.style.display = 'none'
