@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mq</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            meu site lokao
+        </h1>
+        <i id="burger" onclick="aparecerMenu()" class="material-icons">menu</i>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Outro</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Mais</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Testando os media queries</h2>
+        <article>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo facilis iure animi unde, est ipsam molestias blanditiis dicta excepturi eveniet odit ducimus molestiae accusantium pariatur! Repellat, consectetur, inventore facere veritatis cum quis vitae repellendus, expedita fugit quia dicta non recusandae qui sunt debitis illo possimus minus nobis! Provident, consequuntur commodi!</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit libero sapiente modi voluptas vero. Atque ex esse non sapiente corrupti dignissimos aperiam quos nemo error, rem laboriosam doloribus minus sint voluptate harum sit? Ea voluptates cum a? Quasi quo vitae saepe harum. Accusantium modi assumenda enim ducimus in dolores tempore amet esse deleniti qui?</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptas! Magni, vel. Facere dolores, aspernatur soluta vitae accusamus dolore sed illum amet! Nisi eos, assumenda facere debitis tempora quae provident fugiat consequatur error necessitatibus saepe iure a dicta animi vitae!</p>
+        </article>
+    </main>
+    <script>
+        function aparecerMenu() {
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
