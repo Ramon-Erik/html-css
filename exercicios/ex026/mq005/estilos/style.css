@@ -17,15 +17,27 @@ header h1 {
 }
 
 #burger {
-    display: block;
-    width: 100%;
-    padding: 7px;
     cursor: pointer;
-    background-color: #991d1d;
 }
 
-#burger:hover {
-    background-color: #e42b2b;
+#burger div {
+    display: block;
+    width: 32px;
+    height: 3px;
+    margin: 7px;
+    background-color: #fff;
+    transition: rotate 0.5s;
+}
+
+.roda60 {
+    rotate: 46deg;
+    position: absolute;
+    transform: translateY(-10%);
+}
+
+.roda200 {
+    rotate: -46deg;
+    margin-bottom: 5px;
 }
 
 #menu {
@@ -38,6 +50,7 @@ nav li {
     list-style: none;
     background-color: #c22222;
     border: 1px solid white;
+    transition: background 2s;
 }
 
 nav a {
