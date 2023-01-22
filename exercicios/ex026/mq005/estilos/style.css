@@ -37,13 +37,13 @@ header h1 {
 
 .roda200 {
     rotate: -46deg;
-    margin-bottom: 5px;
 }
 
 #menu {
     display: none;
     width: 100%;
     background-color: #ff2a2a;
+    margin-top: 5px;
 }
 
 nav li {
