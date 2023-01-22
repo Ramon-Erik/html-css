@@ -14,7 +14,11 @@
         <h1>
             meu site lokao
         </h1>
-        <i id="burger" onclick="aparecerMenu()" class="material-icons">menu</i>
+        <div id="burger" onclick="aparecerMenu()" class="material-icons">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
         <nav id="menu">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -41,10 +45,19 @@
     </main>
     <script>
         function aparecerMenu() {
+            let linha1 = document.getElementsByClassName('linha1')[0]
+            let linha2 = document.getElementsByClassName('linha2')[0]
+            let linha3 = document.getElementsByClassName('linha3')[0]
             if (menu.style.display == 'none' || menu.style.display == '') {
                 menu.style.display = 'block'
+                linha2.style.display = 'none'
+                linha1.classList.add('roda60')
+                linha3.classList.add('roda200')
             } else {
                 menu.style.display = 'none'
+                linha2.style.display = 'block'
+                linha1.classList.remove('roda60')
+                linha3.classList.remove('roda200')
             }
         }
         function mudarTamanho() {
