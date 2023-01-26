@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="´t-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            width: 350px;
+            height: 500px;
+        }
+        .container:hover .carta {
+            transform: rotateY(180deg);
+        }
+        .carta {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 01s ease;
+        }
+        .frente {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background-color: tomato;
+        }
+        .verso {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background-color: rgb(107, 87, 83);
+            color: white;
+            transform: rotateY(180deg);
+        } 
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="carta">
+            <div class="frente">terço dos homens</div>
+            <div class="verso">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi natus quidem et eos nemo facilis aperiam ipsum veniam laudantium vero!</div>
+        </div>
+    </div>
+</body>
+</html>
